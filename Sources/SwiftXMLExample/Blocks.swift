@@ -11,7 +11,7 @@ fileprivate func blockTransformation(during execution: Execution) -> XTransforma
     XTransformation {
         
         XRule(forElements: "paragraph") { element in
-            execution.log(Message(id: "block element found", type: .info, fact: [.en: "found $0"]), node: element, element.name)
+            execution.log(Message(id: "block element found", type: .info, fact: [.en: #"found block element "$0""#]), node: element, element.name)
             element.name = "p"
         }
         
