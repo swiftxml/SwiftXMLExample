@@ -1,5 +1,6 @@
 import Foundation
 import SwiftXMLComplete
+import LoopsOnOptionals
 
 @Step
 func transformBlocks_step(during execution: Execution, document: XDocument) {

@@ -1,5 +1,6 @@
 import Foundation
 import SwiftXMLComplete
+import LoopsOnOptionals
 
 @Step
 func transformInlines_step(during execution: Execution, document: XDocument, shortNames: Bool = true) {

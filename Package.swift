@@ -13,7 +13,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.6.2"),
-        .package(url: "https://github.com/swiftxml/SwiftXMLComplete.git", from: "1.0.0"),
+        .package(url: "https://github.com/swiftxml/SwiftXMLComplete.git", from: "1.0.1"),
+        .package(url: "https://github.com/swiftxml/LoopsOnOptionals.git", from: "1.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -23,6 +24,7 @@ let package = Package(
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
                 "SwiftXMLComplete",
+                "LoopsOnOptionals",
             ]
         ),
     ]
